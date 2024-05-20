@@ -13,13 +13,14 @@ const Rooms = () => {
     const [searchQuery, setSearchQuery] = useState('');
     const searchParams = useSearchParams();
 
+    
     useEffect(() => {
         const searchQuery = searchParams.get('searchQuery');
         const roomType = searchParams.get('roomType');
 
         if (roomType) setRoomTypeFilter(roomType);
         if (searchQuery) setSearchQuery(searchQuery); 
-    }, [searchParams]);
+    }, []);
 
     async function fetchData() {
         return getRooms();
