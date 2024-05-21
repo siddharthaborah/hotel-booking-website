@@ -60,7 +60,7 @@ type Props = {
               <span className='font-bold text-xl'>
                 {' '}
                 | discount {discount}%. Now{' '}
-                <span className='text-tertiary-dark'>$ {discountPrice}</span>
+                <span className='text-tertiary-dark'>₹ {discountPrice}</span>
               </span>
             ) : (
               ''

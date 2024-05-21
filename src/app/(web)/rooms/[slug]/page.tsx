@@ -1,20 +1,20 @@
 'use client';
 
-import useSWR from "swr";
-import { MdOutlineCleaningServices } from "react-icons/md";
-import {LiaFireExtinguisherSolid} from "react-icons/lia"
-import {AiOutlineMedicineBox} from "react-icons/ai"
-import {GiSmokeBomb} from "react-icons/gi"
-import { useState } from "react";
-import axios from "axios";
+import useSWR from 'swr';
+import { MdOutlineCleaningServices } from 'react-icons/md';
+import { LiaFireExtinguisherSolid } from 'react-icons/lia';
+import { AiOutlineMedicineBox } from 'react-icons/ai';
+import { GiSmokeBomb } from 'react-icons/gi';
+import { useState } from 'react';
+import axios from 'axios';
 
-import { getRoom } from "../../../../libs/apis";
-import LoadingSpinner from "../../loading";
-import HotelPhotoGallery from "../../../../components/HotelPhotoGallery/HotelPhotoGallery";
-import BookRookCta from "../../../../components/BookRoomCta/BookRoomCta";
-import toast from "react-hot-toast";
-import { getStripe } from "@/libs/stripe";
-import BookRoomCta from "../../../../components/BookRoomCta/BookRoomCta";
+import { getRoom } from '@/libs/apis';
+import LoadingSpinner from '../../loading';
+import HotelPhotoGallery from '@/components/HotelPhotoGallery/HotelPhotoGallery';
+import BookRoomCta from '@/components/BookRoomCta/BookRoomCta';
+import toast from 'react-hot-toast';
+import { getStripe } from '@/libs/stripe';
+import RoomReview from '@/components/RoomReview/RoomReview';
 
 const RoomDetails = (props: { params: { slug: string } }) => {
   const {
@@ -165,7 +165,7 @@ const RoomDetails = (props: { params: { slug: string } }) => {
                   <p className='md:text-lg font-semibold'>Customer Reviews</p>
                 </div>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-                  {/* <RoomReview roomId={room._id} /> */}
+                  <RoomReview roomId={room._id} />
                 </div>
               </div>
             </div>
