@@ -14,7 +14,7 @@ import HotelPhotoGallery from '@/components/HotelPhotoGallery/HotelPhotoGallery'
 import BookRoomCta from '@/components/BookRoomCta/BookRoomCta';
 import toast from 'react-hot-toast';
 import { getStripe } from '@/libs/stripe';
-// import RoomReview from '@/components/RoomReview/RoomReview';
+
 
 const RoomDetails = (props: { params: { slug: string } }) => {
   const {
